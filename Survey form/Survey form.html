@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Survey form.css">
+  <title>Survey form</title>
+</head>
+
+<body>
+  <div id="container">
+    <header class="header">
+      <h1 id="title">F-Code Survey Form</h1>
+      <p id="description">Thank you for taking time to help us improve the club</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="age">Age
+          <span class="clue">(optional)</span>
+        </label>
+        <input type="number" name="age" id="number" class="form-control" min="10" max="100"
+          placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="dropdown">What is your course in FPT?</label>
+        <select id="dropdown" name="course" class="form-control" required>
+          <option disabled selected value="">Select your course</option>
+          <option value="K16">K16</option>
+          <option value="K15">K15</option>
+          <option value="K14">K14</option>
+          <option value="K13">K13</option>
+          <option value="K12">K12</option>
+          <option value="PreferNotToSay">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you enjoy F-code environment?</p>
+        <label>
+          <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked> Definitely
+        </label>
+        <label>
+          <input type="radio" name="user-recommend" value="maybe" class="input-radio"> Maybe
+        </label>
+        <label>
+          <input type="radio" name="user-recommend" value="notsure" class="input-radio"> Not sure
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="major">What is your major?</label>
+        <select id="major" name="major" class="form-control" required>
+          <option disabled selected value="">Select your current major</option>
+          <option value="SE">SE (Software engineer)</option>
+          <option value="AI">AI (Artificial intelligent)</option>
+          <option value="IA">IA (Information assurance)</option>
+          <option value="preferNotToSay">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What topics do you want to see?
+          <span class="clue">(check all that apply)</span>
+        </p>
+        <label>
+          <input type="checkbox" name="prefer" value="Front-end" class="input-checkbox">Front-end
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="Back-end" class="input-checkbox">Back-end
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="Mobile" class="input-checkbox">Mobile
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="ArtificialIntelligent" class="input-checkbox">Artificial
+          Intelligent
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="Other" class="input-checkbox">Other (Train C, Git/Github, ...)
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comments"
+          placeholder="Enter your comment here ..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script type="text/javascript" src="Survey form.js"></script>
+</body>
+
+</html>

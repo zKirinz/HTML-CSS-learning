@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Product landing page.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img"
+          src="./product landing page.png">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container"></div>
+    <section id="hero">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="get started" class="btn">
+      </form>
+    </section>
+  </div>
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFg0lEQVR4nO2cW2iURxTHf+f7Vq22anwQWg00UIXS515sV7SFgFobENo+tFIolFLxQbzWVGOM1qJLwEjp5SGvJX0pVCLW+tQEdntT+lyK9gKRCj7EC5bWZPf0IbvZXcm682Vnvy+ZnR8M7Awzc86es/+ZzeTbAY/H4/F4PB6Px+PxeDwej8cTCxKls8IK4BVgVXPcmfdcA84LjJsOME6AhrwOMggsn41nLcRN0Hclz1cmnY0SoCnSiIwAqUY8ayEmQDfIBD/W62iWgEXyLcimYvUKcBYh34iHzqGEwDZgTbHhgvynL9uZe3FwWxcHqosD1UU8YWVSB9FFrJ2O05LglskYMwU8HOr0gLv5SBt3qxE1VmZrevAAg0t4jDDsAl1hNJczyDj5/Dn5h7+rmh8QqxlnMemky1PlrN6anB6jyxY8i+hFoC2aWWcYR2WT3J64VGqoFataNKaAUAdo3eADrAAdANZPt0RUgGECaiQykKfLFclEMz3f0YPFF89UNdeKVQ3MlqCVC8qyujEh9dpbAVsxaVQBRsOdxFJMGtsDIq53TmEpJl4Bs8UrIGG8AhLGKyBhXFWAdu/bh9IDXKZQOCH9A6PWjdjAUkzM8hVUFJP2RgjkKKG0EUonC8IRPbR/RHv2v2jRgh0sxcQwAVIuJu2NkJKlpISKspFAvtPeA1nt3d9lz1CDWIrJ3FNAGNQqacJwWI+9n9VjB5NPhLMKCKVOCdKEMqwfdmf1RIKJcFcB9RJQLClJEwbDevKDrJ46HH8i4lWAHWNGVK//JiVNqMPafyir/TEmwt0lqOYeUK9MLU2ne7J6OoZEtPwSVLtMLU1njmT1497mJcJdBTScgPIeETCsn/Rm9dMmJMJSTObeUURofdI0MKyf940SsEPe6/vVyqyuHkWQatoB30bgLPCkldmcPYwLm3rCqvW7GOKsApqXgFEK4Q5rs7mrAOuT5gg0I2/2nLM6q1dAXXJowX7gSzirgEY3YSVHIBl5rbs5gS/hFXA/MrXUbGty4Es4q4Doe0AOlYxsOxBP4Et4BZBDyUhXzIEv4awC6u0BKjmCQkY2JRT4Eu4qoOY7yFEgI5v3Jhv4Es4qIJQ7wNKKllGEPnlpz0gTrM0eZxWQkqMoPYj8AnJCNuwatW/EAq4qQDbsHgAG7M9sGWcVMF9wVQHzBq+AhPEKSBivgITxCkiYOaKAe8BCAH370YMzd3KUckjuVbXHqgCRy4i+UKydimTZGfRSVTVWBYS6G+QiUzdptSLjwJ6qljgVIIPXL+nOlU9RSHWh2lrX2IhcJZg8J5/duF7VHqsCgKIDg9HMOkyTfqJ0p/S8o+5sXzMLt1oC3dW+tuLZ0NsmY0yXoByweapSuKC7Vn2Jcnd2brqKPoIW3pj+SKtmTUaZJSCU4yidxf5rgCPRLrxsBaoCMgHB8cijHoTubX8V1UFa9xuPKeMg78jA2NcmnSN9jnV3Rxvh5FaEtRR4aHb+RUAo/3GnRLuPqJGxsyHgX+A3JlPfyJk/b5oOm9MLiR5oL9+90z8W7cPSwNg4mdsXsTZy2DdPDgoT9VIPr16HBs9TkIUzdhAtH2+odEea3GRsoPdQ/V5Ojv0UaW6LJJIA7etoYyI/BLIlCfszcJ7J1HbJ/G502apNkjlQzueHCGRL1Q/aki1bWTj5RbPf9kzErgDt61iH6g/FagEYQuRa3H5MOaOrEbajxThI8Jz0/fFznC7EvwmLpqfTrgxJ319vxe5DBXrscUHYDoAU1gOOJyCQyqfersZu/34CuVJRWxa3+QQSUPFaNK0fdST7nzTRNJrcl8EEEhBQ/rGidCJ0xu5DFVKxE8afiGQV4EkkAdk5fM+00RGyx+PxeDwej8fj8Xg8Ho/H45mH/A/CLmhfJkPweAAAAABJRU5ErkJggg==">
+        <div class="desc">
+          <h2>Enjoy on your TV</h2>
+          <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <img
+          src="data:image/png;base64,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">
+        <div class="desc">
+          <h2>Download your shows to watch offline</h2>
+          <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <img
+          src="data:image/png;base64,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">
+        <div class="desc">
+          <h2>Watch everywhere</h2>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/aMVUpcV0qUs" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="basic">
+        <div class="level">
+          Basic
+        </div>
+        <h2>$8.99/mo.*</h2>
+        <ol>
+          <li><img src="./X mark.png">
+            <p>HD available</p>
+          </li>
+          <li>
+            <img src="./X mark.png">
+            <p>Ultra HD available</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Watch on your laptop, TV, phone and tablet</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Unlimited movies and TV shows</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Cancel anytime</p>
+          </li>
+          <li>
+            <p>Screens you can watch on at the same time: <strong>1</strong></p>
+          </li>
+        </ol>
+      </div>
+      <div class="product" id="standard">
+        <div class="level">
+          Standard
+        </div>
+        <h2>$12.99/mo.*</h2>
+        <ol>
+          <li><img src="./check mark.png">
+            <p>HD available</p>
+          </li>
+          <li>
+            <img src="./X mark.png">
+            <p>Ultra HD available</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Watch on your laptop, TV, phone and tablet</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Unlimited movies and TV shows</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Cancel anytime</p>
+          </li>
+          <li>
+            <p>Screens you can watch on at the same time: <strong>2</strong></p>
+          </li>
+        </ol>
+      </div>
+      <div class="product" id="premeium">
+        <div class="level">
+          Premium
+        </div>
+        <h2>$15.99/mo.*</h2>
+        <ol>
+          <li><img src="./check mark.png">
+            <p>HD available</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Ultra HD available</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Watch on your laptop, TV, phone and tablet</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Unlimited movies and TV shows</p>
+          </li>
+          <li>
+            <img src="./check mark.png">
+            <p>Cancel anytime</p>
+          </li>
+          <li>
+            <p>Screens you can watch on at the same time: <strong>4</strong></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Terms of use</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <span>Copyright 2019, Netflix</span>
+    </footer>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
